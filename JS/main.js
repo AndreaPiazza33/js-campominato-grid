@@ -2,7 +2,7 @@
 const myButton =document.getElementById('generator')
 const myGrid =document.getElementById('grid')
 
-//evento al click
+//evento al click del bottone
 myButton.addEventListener('click', function () {
     generatedGrid()
 })
@@ -15,6 +15,19 @@ function generatedGrid() {
         cell.classList.add('cell')
         cell.innerText=(i)
         myGrid.append(cell)
-    }
+
+//evento al click della cella
+        cell.addEventListener('click', function (){
+        coloredCell()
+})
+
+//funzione per colorare le celle
+function coloredCell(){
+    cell.classList.add('bg-cell')
+    console.log(i);
+}  
+}    
 }
+
+
 
