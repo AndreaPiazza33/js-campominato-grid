@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+#grid{
+    background-color: darkorange;
+    display: flex;
+    flex-wrap: wrap;
+}
