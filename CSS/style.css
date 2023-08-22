@@ -16,8 +16,24 @@
     flex-wrap: wrap;
 }
 
-.cell{
+.cell-100{
     width: calc(100% / 10);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.cell-81{
+    width: calc(100% / 9);
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.cell-49{
+    width: calc(100% / 7);
     aspect-ratio: 1;
     display: flex;
     justify-content: center;

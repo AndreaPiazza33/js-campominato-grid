@@ -17,7 +17,16 @@
 </head>
 <body>
     <div class="container">
-        <button id="generator">Generate Grid</button>
+        <div class="container d-flex flex-row flex-wrap mb-2">
+          <button id="generator">Generate Grid</button>
+          <select class="form-select" id="difficulty-choice" aria-label="Default select example">
+              <option>Choose your difficulty level</option>
+              <option value="100">Easy</option>
+              <option value="81">Medium</option>
+              <option value="49">Hard</option>
+          </select>
+        </div>
+
         <div id="grid">
 
         </div>
