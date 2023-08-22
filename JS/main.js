@@ -12,6 +12,7 @@ myButton.addEventListener('click', function () {
 let difficultyChoice = document.getElementById('difficulty-choice')
 let cellMax = parseInt(difficultyChoice.value)
 console.log(cellMax);   
+myGrid.innerHTML = ''
 
 if (cellMax == 100) {
     generatedGrid100()
@@ -21,6 +22,9 @@ else if (cellMax == 81){
 }
 else if (cellMax == 49){
     generatedGrid49()
+}
+else{
+    myGrid.innerHTML = ''
 }
 })
 
